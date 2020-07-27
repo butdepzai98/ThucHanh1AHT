@@ -1,0 +1,156 @@
+@import "_base.less";
+
+//-------------------------------TOP Header
+.top-hd {
+    padding: 16px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @black;
+}
+
+.th-left {
+    padding-left: 15px;
+    display: flex;
+    p{
+        margin-left: 5px;
+        color: @grey;
+    }
+    i{
+        color: @grey;
+    }
+}
+
+.th-right {
+    display: flex;
+    padding-right: 4px;
+}
+
+.th-right-item {
+    display: flex;
+    padding: 0 15px;
+
+    p{
+        margin-left: 5px;
+        color: @grey;
+    }
+    
+    i{
+        color: @grey;
+    }
+}
+
+
+//-------------------------------End - TOP Header
+
+//-------------------------------NAVBAR
+
+nav.nav-fix{
+    position: fixed;;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+nav{
+    position: relative;
+    padding: 15px 0px 13px 10px;
+    border-bottom: 1px solid @grey;
+    background: white
+}
+
+div.d-block{
+    display: block;
+}
+
+.icon-nav {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    top: 35%;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+button:focus.icon-nav{
+    outline: none;
+}
+
+.scroll-top {
+    transform: rotate(-90deg);
+    letter-spacing: .2em;
+    position: fixed;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: -100px;
+    right: 10px;
+    cursor: pointer;
+    i{
+        font-size: 15px;
+    }
+}
+
+a.scroll-top:hover{
+    color: @violet;
+}
+
+a.scroll-top:hover:before{
+    background: @violet;
+}
+
+
+a.bottom-100{
+    bottom: 100px;
+}
+
+a.scroll-top:before {
+    content: "";
+    height: 14px;
+    width: 1.5px;
+    background: black;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -20px;
+}
+
+div.t-82px{
+    top: 71px;
+}
+
+.menu-nav {
+    padding-left: 22px;
+    padding-top: 5px;
+
+    ul{
+        li{
+            display: inline-block;
+            padding: 10px 0;
+
+            a{
+                font-family: @mont-bold;
+                text-transform: uppercase;
+                padding: 0px 25px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 5px;
+
+    button{
+        font-size: 25px;
+    }
+}
+
+.logo {
+    padding-left: 14px;
+}
+
+//-------------------------------End - NAVBAR
