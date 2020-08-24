@@ -290,61 +290,7 @@ button {
 .btn-white:hover {
   color: #8262b5;
 }
-.ft-main {
-  padding: 30px 0;
-  background-color: #222222;
-}
-.ft-main h3 {
-  padding: 30px 0;
-  border-bottom: 1px solid #393939;
-  color: #f7f7f7;
-}
-.ft-main p {
-  padding: 30px 0;
-  color: #676767;
-  line-height: 20px;
-}
-.ft-main a {
-  margin-right: 30px;
-  font-size: 16px;
-  color: #676767;
-}
-.ft-nav {
-  padding: 20px 0;
-  justify-content: space-between;
-}
-.ft-nav .ft-nav-left ul li,
-.ft-nav .ft-nav-right ul li {
-  padding: 10px 0;
-}
-.ft-nav .ft-nav-left ul li a,
-.ft-nav .ft-nav-right ul li a {
-  color: #676767;
-  text-transform: capitalize;
-  font-size: 14px;
-}
-.ft-bottom {
-  padding: 30px 0;
-  border-top: 1px solid grey;
-  background-color: #222222;
-}
-.ft-bottom p {
-  color: #676767;
-}
-.ft-bottom a {
-  color: white;
-}
-.ft-bt-right img {
-  border-radius: 4px;
-}
-.p-15 {
-  padding: 15px 0 !important;
-}
-.p-bt-15 {
-  padding-bottom: 15px !important;
-}
 /*<-----------------------------------Home--------------------------------------------->*/
-/* Dành cho điện thoại */
 .icon-nav {
   display: none;
 }
@@ -401,7 +347,8 @@ div.d-block {
   height: 20px;
   text-align: center;
   font-size: 20px;
-  top: 35%;
+  top: 50%;
+  transform: translateY(-50%);
   background: transparent;
   cursor: pointer;
   z-index: 1;
@@ -603,7 +550,7 @@ main {
 }
 .pr-it-title .pr-it-t-price p {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 3px;
   padding: 5px 0;
   color: #676767;
 }
@@ -638,7 +585,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 }
 .new-hd h1:after {
   position: absolute;
@@ -684,6 +631,9 @@ main {
   font-weight: bold;
   margin-bottom: 25px;
 }
+.new-i-title p {
+  line-height: 22px;
+}
 .react {
   padding: 20px 5px;
   background: white;
@@ -702,11 +652,283 @@ main {
   bottom: 16px;
 }
 .slide-news .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 .slide-news .slick-dots li.slick-active button:before {
-  font-size: 13px;
+  font-size: 15px;
 }
 .slide-news .slick-dots li button:before {
   color: #8262b5;
+}
+.ft-main {
+  padding: 30px 0;
+  background-color: #222222;
+}
+.ft-main h3 {
+  padding: 30px 0;
+  border-bottom: 1px solid #393939;
+  color: #f7f7f7;
+}
+.ft-main p {
+  padding: 30px 0;
+  color: #676767;
+  line-height: 20px;
+}
+.ft-main a {
+  margin-right: 30px;
+  font-size: 16px;
+  color: #676767;
+}
+.ft-nav {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.ft-nav .ft-nav-left,
+.ft-nav .ft-nav-right {
+  width: 50%;
+}
+.ft-nav .ft-nav-left ul li,
+.ft-nav .ft-nav-right ul li {
+  padding: 8px 0;
+}
+.ft-nav .ft-nav-left ul li a,
+.ft-nav .ft-nav-right ul li a {
+  color: #676767;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.ft-nav .ft-nav-left ul li a:hover,
+.ft-nav .ft-nav-right ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.ft-bottom {
+  padding: 30px 0;
+  border-top: 1px solid grey;
+  background-color: #222222;
+}
+.ft-bottom p {
+  color: #676767;
+}
+.ft-bottom a {
+  color: white;
+}
+.ft-bt-right img {
+  border-radius: 4px;
+}
+.p-15 {
+  padding: 15px 0 !important;
+}
+.p-bt-15 {
+  padding-bottom: 15px !important;
+}
+.ft-bt-right a {
+  margin-right: 5px;
+}
+/* Dành cho điện thoại */
+@media only screen and (min-width: 320px) and (max-width: 447px) {
+  .menu-nav {
+    background: #222222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    padding-left: 0;
+    color: white;
+    top: 160px;
+  }
+  .menu-nav ul li {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .menu-nav ul li:hover {
+    background: #8262b5;
+  }
+  .logo {
+    display: none;
+  }
+  .icon-nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 448px) and (max-width: 693px) {
+  .menu-nav {
+    background: #222222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    padding-left: 0;
+    color: white;
+    top: 130px;
+  }
+  .menu-nav ul li {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .menu-nav ul li:hover {
+    background: #8262b5;
+  }
+  .logo {
+    display: none;
+  }
+  .icon-nav {
+    display: block;
+  }
+}
+@media all and (min-width: 694px) and (max-width: 1023px) {
+  .menu-nav {
+    background: #222222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    padding-left: 0;
+    color: white;
+    top: 119px;
+    display: none;
+  }
+  .menu-nav ul li {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .menu-nav ul li:hover {
+    background: #8262b5;
+  }
+  .logo {
+    display: none;
+  }
+  .icon-nav {
+    display: block;
+  }
+}
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) and (max-width: 1223px) {
+  .menu-nav {
+    padding-left: 0px;
+  }
+  .menu-nav ul li {
+    margin-right: 10px;
+  }
+}
+@media all and (min-width: 1224px) and (max-width: 1366px) {
+  .menu-nav ul li {
+    margin-right: 30px;
+  }
+}
+@media all and (min-width: 1824px) {
+  .bn-large {
+    width: 750px;
+    margin-left: -7px;
+  }
+  .bn-sm {
+    margin-left: 14px;
+    width: 360px;
+  }
+  .bn-medium {
+    margin-left: 14px;
+    width: 360px;
+  }
+  .product {
+    margin-top: 68px;
+    margin-left: -13px;
+  }
+  .pr-hd h1 {
+    padding-top: 5px;
+    margin-left: -1px;
+    padding-bottom: 25px;
+  }
+  .pr-item {
+    margin-left: -7px;
+  }
+  .row-prl {
+    margin-right: -40px;
+    margin-left: -20px;
+  }
+  .pr-hd h1:after {
+    left: 2px;
+  }
+  .pr-it-title h4 {
+    padding: 2px 0 7px;
+  }
+  .pr-it-img .btn {
+    font-size: 12px;
+    padding: 11px 16px 8px;
+  }
+  .pr-it-img button {
+    bottom: 7px;
+  }
+  .pr-item {
+    margin-bottom: 10px;
+  }
+  .product-lst {
+    margin: 20px 0 60px;
+  }
+  .new-hd h1 {
+    letter-spacing: 2px;
+  }
+  .slide-news {
+    padding: 36px 250px 30px;
+  }
+  .new-i-title {
+    padding: 19px 30px 14px 18px;
+  }
+  .new-i-title h3 {
+    margin-bottom: 20px;
+  }
+  .slide-news .slick-dots {
+    position: unset;
+    margin-top: 10px;
+  }
+  .slick-dots li {
+    margin: 0 2px;
+  }
+  .news {
+    padding: 65px 120px 4px 120px;
+  }
+  .row.row-2k {
+    margin-right: -40px;
+    margin-left: -23px;
+  }
+  .ft-main {
+    padding: 32px 0 15px 0;
+  }
+  .ft-main h3 {
+    padding: 30px 0 28px 0;
+  }
+  .ft-main p {
+    padding: 23px 0 43px 1px;
+    line-height: 22px;
+  }
+  .ft-nav-right {
+    padding-left: 15px;
+  }
+  .ft-r-chil p {
+    padding: 21px 0 30px 1px;
+    line-height: 32px;
+  }
+  .ft-social {
+    margin-right: 33px;
+  }
+  .ft-bt-left {
+    margin-left: -5px;
+  }
+  .ft-bottom {
+    padding: 28px 0 30px;
+  }
+  .ft-bottom p {
+    margin-right: 5px;
+  }
+  .ft-bt-right {
+    margin-top: -4px;
+  }
+  .ft-bt-right a {
+    margin-right: 5px;
+  }
 }

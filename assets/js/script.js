@@ -6,9 +6,10 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        arrows: false,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1920,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -48,7 +49,7 @@ $(document).ready(function () {
       else
       {
         //$('nav').removeClass('nav-fix');
-        //$('.menu-nav').removeClass('d-block t-82px');
+        //$('.menu-nav').removeClass('d-block');
 
         //ScrollTop
         $('.scroll-top').removeClass('bottom-100');
@@ -59,7 +60,7 @@ $(document).ready(function () {
     $('button.icon-nav').on("click", function () {
       if(document.body.scrollTop > 119 || document.documentElement.scrollTop > 119)
       {
-        $('.menu-nav').toggleClass('d-block t-82px');
+        $('.menu-nav').toggleClass('d-block');
       }
       else
       {
