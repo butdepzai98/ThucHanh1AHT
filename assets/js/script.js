@@ -40,15 +40,15 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
       if(document.body.scrollTop > 119 || document.documentElement.scrollTop > 119)
       {
-        $('nav').addClass('nav-fix');
+        //$('nav').addClass('nav-fix');
 
         //ScrollTop
         $('.scroll-top').addClass('bottom-100');
       }
       else
       {
-        $('nav').removeClass('nav-fix');
-        $('.menu-nav').removeClass('d-block t-82px');
+        //$('nav').removeClass('nav-fix');
+        //$('.menu-nav').removeClass('d-block t-82px');
 
         //ScrollTop
         $('.scroll-top').removeClass('bottom-100');

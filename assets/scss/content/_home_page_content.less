@@ -1,415 +1,125 @@
 /*<-----------------------------------Home--------------------------------------------->*/
 @import '../base/_base.less';
-//-------------------------------Home
-main{
-    padding: 15px 0;
-    padding-bottom: 0;
-}
 
-.banner{
-    .row{
-        .col-lg-8
-        {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-}
-
-.bn-large {
-    height: 560px;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 15px;
-
-    .bn-l-title {
-        position: absolute;
-        top: 320px;
-        right: 104px;
-
-        h1{
-            font-family: @pacifico;
-            font-weight: bold;
-            margin-bottom: 18px;
-            font-size: 30px;
-        }
-        button{
-            float: right;
-        }
-    }
-}
-
-.bn-sm {
-    position: relative;
-    height: 200px;
-    width: 360px;
-    margin-right: 15px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    margin-left: 5px;
-    
-    .bn-sm-title {
-        position: absolute;
-        top: 88px;
-        left: 57px;
-
-        h2{
-            text-transform: uppercase;
-            font-family: @mont-bold;
-            color: @black;
-        }
-
-        h3{
-            text-transform: uppercase;
-            color: @grey;
-            font-family: @mont-regular;
-            letter-spacing: 3px;
-        }
-    }
-}
-
-.bn-medium {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 360px;
-    height: 304px;
-    position: relative;
-    margin-left: 5px;
-
-    img{
-        height: 100%;
-        width: 100%;
-    }
-
-    .bn-med-title {
-        position: absolute;
-        top: 123px;
-        left: 40px;
-
-        h2{
-            text-transform: uppercase;
-            font-family: @mont-bold;
-            color: @black;
-            margin-bottom: 18px;
-        }
-
-        h3{
-            text-transform: uppercase;
-            color: @grey;
-            font-family: @mont-regular;
-        }
-    }
-}
-
-//-------------------------------End - MAIN
-
-
-//-------------------------------Product
-.product {
-    margin: 40px 0 45px;
-
-    .container{
-        padding-left: 0;
-    }
-}
-
-.pr-hd {
-    h5{
-        padding: 10px 0;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        color: @violet;
-    }
-
-    h1{
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 25px;
-        padding-top: 4px;
-    }
-
-    hr{
-        background: #8262b5;
-        width: 50px;
-        margin-top: 30px;
-    }
-}
-
-.pr-it-img {
-    position: relative;
-    margin-bottom: 10px;
-
-    button{
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        font-size: 12px;
-    }
-}
-
-.pr-it-title {
-    padding: 5px 0;
-
-    h4{
-        padding: 5px 0;
-    }
-
-    .pr-it-t-price{
-        p{
-            font-size: 16px;
-            margin-right: 5px;
-            padding: 5px 0;
-            color: @grey;
-        }
-
-        span{
-            font-size: 16px;
-            color: @violet;
-            font-family: @openSans;
-            font-weight: bold;
-            padding: 5px 0;
-        }
-    }
-}
-
-.yellow-star{
-    color: @yellow;
-}
-.grey-star{
-    color: #d1d1d1;
-}
-
-//-------------------------------End Product
-
-//------------------------------- NEWS
-.news {
-    padding: 65px 120px 18px 120px;
-    background-image: url(../images/news/bg-news_02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.new-hd{
-
-    h5{
-        padding: 14px 0;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        color: @violet;
-        text-align: center;
-    }
-
-    h1{
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    hr{
-        background: #8262b5;
-        width: 50px;
-        margin: 0 auto;
-        margin-top: 23px;
-    }
-}
-
-.news-item {
-    width: 360px;
-    padding: 15px;
-}
-
-.news-i-img {
-    position: relative;
-}
-
-.news-i-img-calendar {
-    position: absolute;
-    top: 22px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-    background: #a1d1dd;
-    color: white;
-    padding: 6px;
-
-    .border-calendar {
-        border: 1px solid;
-        height: 100%;
-        padding-top: 5px;
-
-        p{
-            margin-bottom: 5px;
-        }
-    }
-}
-
-.new-i-title {
-    padding: 20px;
-    background: white;
-    border-bottom: 1px solid #ededed;
-
-    h3{
-        font-family: @mont-regular;
-        font-weight: bold;
-        margin-bottom: 25px;
-    }
-}
-
-.react{
-    padding: 20px 5px;
-    background: white;
-    color: @grey;
-}
-
-.react-item {
-    padding: 0 15px;
-
-    a{
-        font-size: 14px;
-    }
-}
-
-.slide-news {
-    padding: 50px 0px;
-    
-    .slick-dots{
-        bottom: 16px;
-
-        li{
-            button:before{
-                font-size: 10px;
-            }
-        }
-
-        li.slick-active button:before{
-            font-size: 13px;
-        }
-    }
-    
-    .slick-dots li button:before{
-        color: @violet;
-    } 
-}
-
-
-//-------------------------------End NEWS
 
 /* Dành cho điện thoại */
-@media all and (min-width: 320px) {
+//@media only screen and (min-width: 320px) and (max-width: 860px) {
+
     
-    .logo {
-        padding-left: 33px;
-    }
+//     .logo {
+//         //padding-left: 20px;
+//     }
 
-    .th-right {
-        display: inline-block;
+//     .th-right {
+//         display: inline-block;
         
-        .th-right-item
-        {
-            padding-bottom: 5px;
-        }
+//         .th-right-item
+//         {
+//             padding-bottom: 5px;
+//         }
         
-    }
+//     }
 
-    .bn-large{
-        height: auto;
-        margin-left: 0;
+//     .bn-large{
+//         height: auto;
+//         margin-left: 0;
 
-        .bn-l-title {
-            position: absolute;
-            // top: 53%;
-            // right: 8%;
+//         .bn-l-title {
+//             position: absolute;
+//             // top: 53%;
+//             // right: 8%;
 
-            h1{
-                font-size: 16px;
-            }
-        }
-    }
+//             h1{
+//                 //font-size: 16px;
+//             }
+//         }
+//     }
 
-    .bn-sm{
-        height: auto;
-    }
+//     .bn-sm{
+//         height: auto;
+//     }
 
-    .bn-medium {
-        height: auto;
-    }
+//     .bn-medium {
+//         height: auto;
+//     }
 
-    .menu-nav {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        color: white;
-        background: #222222;
-        left: 0;
-        top: 168px;
-        width: 100%;
+//     .menu-nav {
+//         display: none;
+//         position: fixed;
+//         z-index: 1;
+//         color: white;
+//         background: #222222;
+//         left: 0;
+//         top: 168px;
+//         width: 100%;
 
-        ul{
-            li{
-                display: block;
-                text-align: center;
-            }
-        }
-    }
+//         ul{
+//             li{
+//                 display: block;
+//                 text-align: center;
+//             }
+//         }
+//     }
 
-    .right-nav {
-        display: none;
-    }
-}
+//     .right-nav {
+//         display: none;
+//     }
+// }
 
-/* Dành cho máy tính bảng chiều dọc */
-@media all and (min-width: 600px) {
-    .bn-large .bn-l-title h1 {
-        font-size: 24px;
-    }
+// /* Dành cho máy tính bảng chiều dọc */
+// @media all and (min-width: 600px) {
+//     .bn-large .bn-l-title h1 {
+//         //font-size: 24px;
+//     }
 
-    .th-right {
-        display: flex;
+//     .th-right {
+//         display: flex;
         
-        .th-right-item
-        {
-            padding-bottom: 0px;
-        }
-    }
+//         .th-right-item
+//         {
+//             padding-bottom: 0px;
+//         }
+//     }
 
-}
+// }
 
-@media all and (min-width: 990px) {
-    .icon-nav{
-        right: 3%;
-    }
+// @media all and (min-width: 990px) {
+//     .icon-nav{
+//         right: 3%;
+//     }
 
-}
+// }
  
-/* Dành cho máy tính bảng chiều ngang */
-@media all and (min-width: 1024px) {
-    .menu-nav {
-        display: block;
-        position: static;
-        z-index: 0;
-        color: @black;
-        background: transparent;
-        left: 0;
-    }
+// /* Dành cho máy tính bảng chiều ngang */
+// @media all and (min-width: 1024px) {
+//     .menu-nav {
+//         display: block;
+//         position: static;
+//         z-index: 0;
+//         color: @black;
+//         background: transparent;
+//         left: 0;
+//     }
 
-    .right-nav {
-        display: block;
-    }
+//     .right-nav {
+//         display: block;
+//     }
 
-    .icon-nav{
-        display: none;
-    }
+//     .icon-nav{
+//         display: none;
+//     }
 
-    .menu-nav {
-        ul{
-            li{
-                display: inline-block;
+//     .menu-nav {
+//         ul{
+//             li{
+//                 display: inline-block;
                 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
  
-/* Dành cho màn hình desktop */
-@media all and (min-width: 1280px) {
-    .container{width: 1200px;}
-}
+// /* Dành cho màn hình desktop */
+// @media all and (min-width: 1280px) {
+//     .container{width: 1200px;}
+// }

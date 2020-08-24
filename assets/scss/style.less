@@ -17,3 +17,471 @@
 @import './common/configskin/_skin.less';
 
 
+//-------------------------------TOP Header
+.icon-nav{
+    display: none;
+}
+
+.top-hd {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @black;
+}
+
+.th-left {
+    padding-left: 15px;
+    display: flex;
+    p{
+        margin-left: 5px;
+        color: @grey;
+    }
+    i{
+        color: @grey;
+    }
+}
+
+.th-right {
+    display: flex;
+    padding-right: 4px;
+}
+
+.th-right-item {
+    display: flex;
+    padding: 0 15px;
+
+    p{
+        margin-left: 5px;
+        color: @grey;
+    }
+    
+    i{
+        color: @grey;
+    }
+}
+
+
+//-------------------------------End - TOP Header
+
+//-------------------------------NAVBAR
+
+nav.nav-fix{
+    position: fixed;;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+nav{
+    position: relative;
+    padding: 20px 0px 15px 15px;
+    border-bottom: 1px solid @grey;
+    background: white
+}
+
+div.d-block{
+    display: block;
+}
+
+.icon-nav {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    top: 35%;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+button:focus.icon-nav{
+    outline: none;
+}
+
+.scroll-top {
+    transform: rotate(-90deg);
+    letter-spacing: .2em;
+    position: fixed;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: -100px;
+    right: 10px;
+    cursor: pointer;
+    i{
+        font-size: 15px;
+    }
+}
+
+a.scroll-top:hover{
+    color: @violet;
+}
+
+a.scroll-top:hover:before{
+    background: @violet;
+}
+
+
+a.bottom-100{
+    bottom: 100px;
+}
+
+a.scroll-top:before {
+    content: "";
+    height: 14px;
+    width: 1.5px;
+    background: black;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -20px;
+}
+
+div.t-82px{
+    top: 71px;
+}
+
+.menu-nav {
+    padding-left: 42px;
+
+    ul{
+        li{
+            display: inline-block;
+            padding: 13px 0px 16px;
+            margin-right: 50px;
+
+            a{
+                font-family: @mont-bold;
+                text-transform: uppercase;
+                //padding: 0px 25px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+        font-size: 30px;
+        margin: 0 14px;
+        padding-top: 6px;
+    }
+}
+
+//-------------------------------End - NAVBAR
+
+
+//-------------------------------Home
+main{
+    padding-bottom: 0;
+}
+
+.banner {
+    padding-top: 30px;
+}
+
+.bn-large {    
+    height: 560px;
+
+    .bn-l-title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 40px;
+        right: 94px;
+
+        h1{
+            font-family: @pacifico;
+            font-weight: bold;
+            margin-bottom: 18px;
+            font-size: 30px;
+            letter-spacing: 0.1px;
+        }
+        button{
+            float: right;
+        }
+    }
+}
+
+.bn-sm {
+    position: relative;
+    height: 200px;
+    
+    .bn-sm-title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 57px;
+
+        h2{
+            text-transform: uppercase;
+            font-family: @mont-bold;
+            color: @black;
+            margin-top: 3px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            color: @grey;
+            font-family: @mont-regular;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.bn-medium {
+    margin-top: 30px;
+    height: 330px;
+    position: relative;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .bn-med-title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+
+        h2{
+            text-transform: uppercase;
+            font-family: @mont-bold;
+            color: @black;
+            margin-bottom: 17px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            color: @grey;
+            font-family: @mont-regular;
+            letter-spacing: 3px;
+            margin-bottom: 4px;
+        }
+
+        button{
+            margin-left: 2px;
+            padding-left: 19px;
+        }
+    }
+}
+
+//-------------------------------End - MAIN
+
+
+//-------------------------------Product
+.product {
+    margin-top: 70px;
+}
+
+.product-lst {
+    margin: 20px 0 30px;
+}
+
+.pr-hd {
+    h5{
+        padding: 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: @violet;
+    }
+
+    h1{
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    h1:after{
+        position: absolute;
+        content: "";
+        border-bottom: 1px solid @violet;
+        width: 50px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.pr-it-img {
+    position: relative;
+    margin-bottom: 10px;
+
+    button{
+        position: absolute;
+        bottom: 8px;
+        left: 5px;
+        font-size: 12px;
+    }
+}
+
+.pr-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pr-it-title {
+    padding: 5px 0;
+
+    h4{
+        padding: 5px 0 7px;
+    }
+
+    .star-rating
+    {
+        margin-left: 1px;
+        font-size: 13px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+
+    .pr-it-t-price{
+        p{
+            font-size: 16px;
+            margin-right: 5px;
+            padding: 5px 0;
+            color: @grey;
+        }
+
+        span{
+            font-size: 16px;
+            color: @violet;
+            font-family: @openSans;
+            font-weight: bold;
+            padding: 5px 0;
+        }
+    }
+}
+
+.yellow-star{
+    color: @yellow;
+    margin: 0 -1px;
+}
+.grey-star{
+    color: #d1d1d1;
+}
+
+//-------------------------------End Product
+
+//------------------------------- NEWS
+.news {
+    padding: 65px 120px 18px 120px;
+    background-image: url(../images/news/bg-news_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new-hd{
+
+    h5{
+        padding: 14px 0;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: @violet;
+        text-align: center;
+    }
+
+    h1{
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding-bottom: 28px;
+    }
+
+    h1:after {
+        position: absolute;
+        content: "";
+        border-bottom: 1px solid @violet;
+        bottom: 0;
+        width: 50px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+.news-item {
+    width: 360px;
+    padding: 15px;
+}
+
+.news-i-img {
+    position: relative;
+}
+
+.news-i-img-calendar {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #a1d1dd;
+    color: white;
+    padding: 6px;
+
+    .border-calendar {
+        border: 1px solid;
+        height: 100%;
+        padding-top: 5px;
+
+        p{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.new-i-title {
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ededed;
+
+    h3{
+        font-family: @mont-regular;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+}
+
+.react{
+    padding: 20px 5px;
+    background: white;
+    color: @grey;
+}
+
+.react-item {
+    padding: 0 15px;
+
+    a{
+        font-size: 14px;
+    }
+}
+
+.slide-news {
+    padding: 50px 0px;
+    
+    .slick-dots{
+        bottom: 16px;
+
+        li{
+            button:before{
+                font-size: 10px;
+            }
+        }
+
+        li.slick-active button:before{
+            font-size: 13px;
+        }
+    }
+    
+    .slick-dots li button:before{
+        color: @violet;
+    } 
+}
+
+
+//-------------------------------End NEWS

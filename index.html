@@ -7,6 +7,10 @@
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!-- Icon 7 Stroke -->
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/css/helper.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Slick -->
@@ -52,9 +56,9 @@
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </a>
 
-            <div class="container-fliud">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 d-flex align-items-center">
+                    <div class="col-lg-3">
                         <div class="logo">
                             <a href="" title="Home">
                                 <img src="assets/images/logo.png" alt="Franco" class="img-fluid">
@@ -95,12 +99,12 @@
         
                     <div class="col-lg-1">
                         <div class="right-nav">
-                            <button class="btn">
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </button>
+                            <a href="">
+                                <i class="pe-7s-like"></i>
+                            </a>
+                            <a href="">
+                                <span class="pe-7s-cart"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -111,40 +115,41 @@
     <!-- /Header -->
 
     <main>
-        <div class="container">
-            <!-- BANNER -->
-            <div class="banner">
+        
+        <!-- BANNER -->
+        <div class="banner">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="bn-large">
-                            <img class="img-fluid" src="assets/images/ads1_03.jpg" alt="banner1">
-                            <div class="bn-l-title">
-                                <h1>Two High-end Materials</h1>
-                                <button class="btn btn-violet">Shop Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="bn-sm">
-                            <img class="img-fluid" src="assets/images/abs2_03.jpg" alt="banner2">
-                            <div class="bn-sm-title">
-                                <h3>small thing</h3>
-                                <h2>make different</h2>
-                            </div>
-                        </div>
-                        <div class="bn-medium">
-                            <img class="img-fluid" src="assets/images/abs3_03.jpg" alt="banner3">
-                            <div class="bn-med-title">
-                                <h3>Folio</h3>
-                                <h2>backpack</h2>
-                                <button class="btn btn-violet">Shop Now</button>
-                            </div>
+                <div class="col-lg-8">
+                    <div class="bn-large">
+                        <img class="c-img" src="assets/images/ads1_03.jpg" alt="banner1">
+                        <div class="bn-l-title">
+                            <h1>Two High-end Materials</h1>
+                            <button class="btn btn-violet">Shop Now</button>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="bn-sm">
+                        <img class="c-img" src="assets/images/abs2_03.jpg" alt="banner2">
+                        <div class="bn-sm-title">
+                            <h3>small thing</h3>
+                            <h2>make different</h2>
+                        </div>
+                    </div>
+                    <div class="bn-medium">
+                        <img class="c-img" src="assets/images/abs3_03.jpg" alt="banner3">
+                        <div class="bn-med-title">
+                            <h3>Folio</h3>
+                            <h2>backpack</h2>
+                            <button class="btn btn-violet">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
-            <!-- /BANNER -->
-        </div>   
+        </div>
+        <!-- /BANNER -->
 
         <!-- HEADER PRODUCT -->
         <div class="product">
@@ -152,21 +157,51 @@
                 <div class="pr-hd">
                     <h5>franco</h5>
                     <h1>Featured items</h1>
-                    <hr>
                 </div>
             </div>
         </div>
         <!-- /HEADER PRODUCT -->
 
         <!-- PRODUCT LIST-->
-        <div class="product">
+        <div class="product-lst">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd1.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd1.jpg" alt="">
+                                </a>
+                                <button class="btn btn-white">ADD TO CART</button>
+                            </div>
+        
+                            <div class="pr-it-title">
+                                <h4>
+                                    <a href="">Suspendisse id volutpat</a>
+                                </h4>
+    
+                                <div class="star-rating">
+                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o grey-star" aria-hidden="true"></i>
+                                </div>
+    
+                                <div class="pr-it-t-price d-flex">
+                                    <del>
+                                        <p>$99.00</p>
+                                    </del> 
+                                    <span>$84.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="pr-item">
+                            <div class="pr-it-img">
+                                <a href="">
+                                    <img src="assets/images/prd2.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -197,7 +232,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd2.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd3.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -228,38 +263,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd3.jpg" class="c-img" alt="">
-                                </a>
-                                <button class="btn btn-white">ADD TO CART</button>
-                            </div>
-        
-                            <div class="pr-it-title">
-                                <h4>
-                                    <a href="">Suspendisse id volutpat</a>
-                                </h4>
-    
-                                <div class="star-rating">
-                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o yellow-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o grey-star" aria-hidden="true"></i>
-                                </div>
-    
-                                <div class="pr-it-t-price d-flex">
-                                    <del>
-                                        <p>$99.0</p>
-                                    </del> 
-                                    <span>$84.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="pr-item">
-                            <div class="pr-it-img">
-                                <a href="">
-                                    <img src="assets/images/prd4.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd4.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -291,7 +295,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd5.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd5.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -322,7 +326,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd6.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd6.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -353,7 +357,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd7.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd7.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -384,7 +388,7 @@
                         <div class="pr-item">
                             <div class="pr-it-img">
                                 <a href="">
-                                    <img src="assets/images/prd8.jpg" class="c-img" alt="">
+                                    <img src="assets/images/prd8.jpg" alt="">
                                 </a>
                                 <button class="btn btn-white">ADD TO CART</button>
                             </div>
@@ -423,7 +427,6 @@
             <div class="new-hd">
                 <h5>latest</h5>
                 <h1>news & events</h1>
-                <hr>
             </div>
 
             <div class="slide-news">
@@ -750,7 +753,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>                
         </div>
         <!-- /NEWS -->
     </main>
@@ -767,7 +770,7 @@
                             Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. 
                         </p>
                         
-                        <div class="ft-social">
+                        <div class="ft-social d-flex">
                             <a href="">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
@@ -861,7 +864,7 @@
                     <a href=""> ArrowHitech</a>.
                 </div>
 
-                <div class="ft-bt-right">
+                <div class="ft-bt-right d-flex">
                     <a href="">
                         <img src="assets/images/footer/ft-1_03.jpg" alt="">
                     </a>
