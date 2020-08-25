@@ -18,14 +18,14 @@ $(document).ready(function () {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 769,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 576,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -42,6 +42,7 @@ $(document).ready(function () {
       if(document.body.scrollTop > 119 || document.documentElement.scrollTop > 119)
       {
         //$('nav').addClass('nav-fix');
+        $('.menu-nav').removeClass('d-block');
 
         //ScrollTop
         $('.scroll-top').addClass('bottom-100');

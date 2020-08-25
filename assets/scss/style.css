@@ -425,9 +425,9 @@ main {
 }
 .bn-large .bn-l-title {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
-  margin-top: 40px;
+  margin-top: 30px;
   right: 94px;
 }
 .bn-large .bn-l-title h1 {
@@ -446,7 +446,7 @@ main {
 }
 .bn-sm .bn-sm-title {
   position: absolute;
-  top: 50%;
+  top: 54%;
   transform: translateY(-50%);
   left: 57px;
 }
@@ -473,7 +473,7 @@ main {
 }
 .bn-medium .bn-med-title {
   position: absolute;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   left: 40px;
 }
@@ -736,6 +736,7 @@ main {
     padding-left: 0;
     color: white;
     top: 160px;
+    display: none;
   }
   .menu-nav ul li {
     display: block;
@@ -751,6 +752,9 @@ main {
   }
   .icon-nav {
     display: block;
+  }
+  .news {
+    padding: 65px 30px 18px 30px;
   }
 }
 @media only screen and (min-width: 448px) and (max-width: 693px) {
@@ -763,6 +767,7 @@ main {
     padding-left: 0;
     color: white;
     top: 130px;
+    display: none;
   }
   .menu-nav ul li {
     display: block;
@@ -778,6 +783,9 @@ main {
   }
   .icon-nav {
     display: block;
+  }
+  .news {
+    padding: 65px 30px 18px 30px;
   }
 }
 @media all and (min-width: 694px) and (max-width: 1023px) {
@@ -806,6 +814,38 @@ main {
   }
   .icon-nav {
     display: block;
+  }
+  .news {
+    padding: 65px 30px 18px 30px;
+  }
+}
+@media all and (max-width: 575px) {
+  .news {
+    padding: 65px 15px 18px 15px;
+  }
+}
+@media all and (max-width: 767px) {
+  .bn-large .bn-l-title {
+    top: 50%;
+    right: 10%;
+  }
+  .bn-large .bn-l-title h1 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 991px) {
+  .bn-large {
+    height: auto;
+  }
+  .bn-sm {
+    height: auto;
+    margin-top: 30px;
+  }
+  .bn-medium {
+    height: auto;
+  }
+  .pr-item .pr-it-img a img {
+    width: 100%;
   }
 }
 /* Dành cho máy tính bảng chiều ngang */

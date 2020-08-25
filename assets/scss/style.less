@@ -189,9 +189,9 @@ main{
 
     .bn-l-title {
         position: absolute;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
-        margin-top: 40px;
+        margin-top: 30px;
         right: 94px;
 
         h1{
@@ -213,7 +213,7 @@ main{
     
     .bn-sm-title {
         position: absolute;
-        top: 50%;
+        top: 54%;
         transform: translateY(-50%);
         left: 57px;
 
@@ -245,7 +245,7 @@ main{
 
     .bn-med-title {
         position: absolute;
-        top: 50%;
+        top: 52%;
         transform: translateY(-50%);
         left: 40px;
 
@@ -588,6 +588,7 @@ main{
         padding-left: 0;
         color: white;
         top: 160px;
+        display: none;
 
         ul{
             li{
@@ -609,6 +610,10 @@ main{
 
     .icon-nav {
         display: block;
+    }
+
+    .news{
+        padding: 65px 30px 18px 30px;
     }
 
 }
@@ -624,6 +629,7 @@ main{
         padding-left: 0;
         color: white;
         top: 130px;
+        display: none;
 
         ul{
             li{
@@ -645,6 +651,10 @@ main{
 
     .icon-nav {
         display: block;
+    }
+
+    .news{
+        padding: 65px 30px 18px 30px;
     }
 }
 
@@ -682,6 +692,55 @@ main{
 
     .icon-nav {
         display: block;
+    }
+
+    .news{
+        padding: 65px 30px 18px 30px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .news {
+        padding: 65px 15px 18px 15px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .bn-large .bn-l-title{
+        top: 50%;
+        right: 10%;
+
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .bn-large{
+        height: auto;
+    }
+
+    .bn-sm{
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .bn-medium{
+        height: auto;
+    }
+
+    .pr-item{
+
+        .pr-it-img{
+
+            a{
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
  
